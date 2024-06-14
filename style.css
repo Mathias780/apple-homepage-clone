@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f7;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+
+.container-navigation {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.container-navigation a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-navigation i {
+    padding-inline: 1rem;
+}
+
+.nav-list li {
+    padding-inline: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+@media (max-width:53em) {
+    .nav-list {
+        display: none;
+    }
+}
+
+.top-infos {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10rem;
+    
+}
+.top-Texte{
+    display: flex;
+    align-items: center;
+    padding: 80px 0 64px;
+}
+.top-infos-h1 {
+    display: flex;
+    align-items: center;
+    padding: 80px 0 64px;
+    color: #1d1d1f;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.h-grey {
+    color: #6e6e73;
+}
+
+
+main {
+    padding-left: 6rem;
+}
+
+
+.top-container-carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    
+}
+
+.Primary-card {
+    border-radius: 18px;
+    box-sizing: border-box;
+    height: 148px;
+    min-width: 136px;
+    overflow: hidden;
+    padding: 18px 8px 16px
+}
+
+.Primary-card img {
+    display: block;
+    margin: 0 auto;
+    max-height: 78px;
+    width: auto;
+}
+
+.Primary-card p {
+    text-align: center;
+}
+
+.Mac {
+    margin-block: 5rem;
+}
+
+/*Un container ici*/
+
+.long-card {
+    width: 25rem;
+    height: 33rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.long-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values */
+    cursor: pointer;
+}
+
+.bg-long-card-1 {
+    background-image: url('images_container/store-card-40-macbook-air-202402_FMT_WHH.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-long-card-2{
+    background-image: url('images_container/store-card-40-iphone-15-pro-202309_FMT_WHH.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.bg-long-card-3 {
+    background-image: url('images_container/store-card-40-watch-s9-202309_GEO_FR_FMT_WHH.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.bg-long-card-4{
+    background-image: url('images_container/store-card-40-ipad-202310_GEO_FR_FMT_WHH.jpg');
+    background-position: bottom;
+    background-size: cover; 
+}
+
+.bg-long-card-5 {
+    background-image: url('images_container/store-card-40-iphone-15-202309.jpg');
+    background-position: center ;
+    background-size: cover;
+}
+
+.bg-long-card-6 {
+    background-image: url('images_container/store-card-40-macbook-pro-202310.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-long-card-7 {
+    background-image: url('images_container/store-card-40-watch-ultra-202309_GEO_FR.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-long-card-8 {
+    background-image: url('images_container/store-card-40-ipad-pro-202210_GEO_FR.jpg');
+    background-position: bottom;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.bg-long-card-9 {
+    background-image: url('images_container/store-card-40-watch-se-202403_GEO_FR.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.bg-long-card-10 {
+    background-image: url('images_container/store-card-40-watch-bands-202403.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.mid-1-container {
+    margin-bottom: 3.5rem;
+}
+
+.mid-1-container-carousel {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+    overflow-x: auto;
+    padding-right: 10rem;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* Hide scrollbar initially */
+    scroll-behavior: smooth;
+    position: relative; /* Add a relative position */
+}
+
+.mid-1-container-carousel::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar for WebKit browsers */
+}
+
+.mid-1-container-carousel .scrollbar-track {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px; /* Width of the scrollbar */
+    height: 100%;
+    background: transparent; /* Background color of the scrollbar track */
+}
+
+.mid-1-container-carousel .scrollbar-thumb {
+    background: #aaa; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+    cursor: pointer;
+}
+
+.mid-1-container-carousel .scrollbar-thumb:hover {
+    background: #888; /* Color of the scrollbar thumb on hover */
+}
+
+.mid-1-container-carousel h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.mid-1-container-carousel p {
+    font-size: 0.9rem;
+}
+ 
+/*Second Container*/
+
+.mid-2-container-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding-right: 4rem;
+    
+}
+
+.medium-card {
+    width: 33rem;
+    height: 33rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-inline: 1rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.medium-card:hover {
+        transform: scale(1.05); /* Increase the size of the card */
+        cursor: pointer;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values */
+}
+
+.split-card {
+    width: 33rem;
+    height: 15.5rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+
+.split-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values */
+}
+
+.medium-card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+
+.medium-card p {
+    font-size: 1rem;
+}
+
+.bg-medium1 {
+    background-image: url('images_container2/store-card-50-specialist-help-202309_GEO_FR.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-medium2 {
+    background-image: url('images_container2/store-card-50-TAA-202310.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-split1 {
+    background-image: url('images_container2/store-card-25-apps-202108.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-block: 3.6rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-inline-end: 5rem;
+}
+
+.bg-split2 {
+    background-image: url('images_container2/store-card-25-genius-202108.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-inline-end: 18rem;
+    padding-block: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.wrap-split .bg-split1 {
+    margin-bottom: 2rem;
+}
+
+/*Third Container*/
+
+.mid-3-container{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-right: 1rem;
+}
+
+.wrapper-mid {
+    width: 20rem;
+    height: 15.5rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 2rem 2rem 0px;
+    transition: transform 0.3s ease;
+}
+.wrapper-mid:hover {
+   transform: scale(1.05);
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+}
+
+.wrapper-mid p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.mid-3-container-carousel {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+/*span color*/
+.carousel-text-color {
+    color: #68cc45;
+}
+.carousel-text-color-2 {
+    color: #007aff;
+}
+.carousel-text-color-3 {
+    color: #ac39ff;
+}
+.carousel-text-color-4 {
+    color: #220ed3;
+}
+.carousel-text-color-5 {
+    color: #220ed3;
+}
+.carousel-text-color-6 {
+    color: orange;
+}
+
+.icon-one {
+    color: #68cc45;
+    font-size: 1.5rem;
+    
+}
+.icon-two {
+    color: #007aff;
+    font-size: 1.5rem;
+}
+.icon-three {
+    color: #ac39ff;
+    font-size: 1.5rem;
+}
+.icon-four {
+    color: #220ed3;
+    font-size: 1.5rem;
+}
+.icon-five {
+    color: orange;
+    font-size: 1.5rem;
+}
+
+/*fourth container*/
+
+.bigger-card {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-right: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.bigger-card p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.bigger-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.bg-bigger {
+    background-image: url('Images_accessoires_container/store-card-40-accessories-202403.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.bg-bigger-1 {
+    background-image: url('Images_accessoires_container/store-card-40-accessories-explore-202403.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.bg-bigger-2 {
+    background-image: url('Images_accessoires_container/store-card-40-applemusic-202301.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-right: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.card p {
+    font-size: 1rem;
+}
+
+.card img {
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 2rem;
+}
+
+.mid-4-container-carousel {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    overflow-x: scroll;
+    scrollbar-width: 0;
+    margin-bottom: 4rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.bigger-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/*Third Container*/
+
+.cube-card {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    margin-right: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.cube-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cube-card p {
+    font-size: 1rem;
+
+}
+
+.cube-card h3 {
+    font-size: 1.5rem;
+}
+
+.bg-cube {
+   background-image: url('images_apple/store-card-50-tv-services-202303.jpg');
+   background-position: center ;
+   background-size: cover;
+   color: #fff;
+}
+.bg-cube-1 {
+    background-image: url('images_apple/store-card-50-subscriptions-202108_GEO_FR.jpg');
+    background-position: center ;
+    background-size: cover;
+}
+.bg-cube-2 {
+    background-image: url('images_apple/store-card-50-applecare-202309.jpg');
+    background-position: center ;
+    background-size: cover;
+}
+.bg-cube-3 {
+    background-image: url('images_apple/store-card-50-applepay-202303_GEO_FR.jpg');
+    background-position: center ;
+    background-size: cover;
+}
+.bg-cube-4 {
+    background-image: url('images_apple/store-card-50-homekit-202309_GEO_FR.jpg');
+    background-position: center ;
+    background-size: cover;
+}
+
+.end-container-carousel {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow-x: scroll;
+
+}
+
+.end-container {
+    margin-bottom: 4rem;
+}
+
+/*Fourth container*/
+
+.mid-card {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    box-shadow: 0em 0.30em 0.75em rgba(0, 0, 0, 0.1);
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    transition: transform 0.3s ease;
+}
+.mid-card p {
+    font-size: 1rem;
+}
+.mid-card h3 {
+    font-size: 1.5rem;
+}
+
+.mid-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-mid-card-1 {
+    background-image: url('images_apple/store-mac-card-40-education-202402.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.bg-mid-card-2 {
+    background-image: url('images_apple/store-card-40-business-202209_GEO_FR.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.bg-mid-card-3 {
+    background-image: url('images_apple/store-card-40-refurb-202402.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container-mid-card {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 0;
+}
+
+/*start footer*/
+.button {
+    border-radius: 30px;
+    padding: 0.7rem;
+    background-color: #f5f5f7;
+}
+
+
+.list-Shortcuts {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-Shortcuts li{
+    padding-right: 1rem;
+} 
+
+.Shortcuts {
+    margin-top: 3rem;
+}
+/*Footer*/
+
+.footer-navigation {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-inline: 15rem;
+    margin-top: 5rem;
+    border-top: solid 0.1rem grey;
+    padding-top: 1rem;
+    
+}
+
+.footer-navigation a {
+    color: #1d1d1f;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-navigation p {
+    font-size: 1rem;
+}
+
+.Infos-footer a {
+    text-decoration: underline;
+    color: #007aff;
+}
+
+/* Test de pallet de couleur
+.pallet-grey {
+    color: gray;-
+
+
+.pallet {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+*/
+
+
+
+/* modify the font-size and otheres thing pay attention to the original model !!!*/
+
+/*you need to add space between the two columns in the second container and add some hover effect for the containers*/
+
+/*set the @media for the style you already done this should be a minimun responsive dont wine budy*/
